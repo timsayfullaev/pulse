@@ -65,6 +65,21 @@
     }
 
     .title {
-        font-size: 24px;
+        font-size: 20px;
+        &_left {
+            line-height: 36px;
+        }
+    }
+
+    .consultation {
+        min-height: 606px;
+        padding: 50px 0 54px 0;
+        &__text {
+            font-size: 18px;
+        }
+    }
+
+    .form {
+        width: 100%;
     }
 }
