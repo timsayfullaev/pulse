@@ -1,0 +1,46 @@
+.pulse-monitor {
+    padding: 108px 0 107px 0;
+    &__slider {
+        position: relative;
+        .slick-slide img {
+            margin: 0 auto;
+        }
+        .slick-arrow {
+            border: none;
+            padding: 0;
+            background: none;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .slick-prev {
+            left: 0;
+        }
+        .slick-next {
+            right: 0;
+        }
+        .slick-dots {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 27px;
+            li {
+                margin: 0 6px;
+                button {
+                    border: none;
+                    font-size: 0;
+                    padding: 6px;
+                    border-radius: 100%;
+                    transition: all .25s;
+                }
+            }
+            .slick-active {
+                button {
+                    background-color: $main_color;
+                }
+            }
+        }
+    }
+}
