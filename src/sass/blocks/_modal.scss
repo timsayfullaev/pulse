@@ -1,0 +1,55 @@
+.overlay {
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.modal {
+    width: 382px;
+    min-height: 402px;
+
+    background: #F2F2F2;
+    padding: 35px 40px 40px 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    &__close {
+        font-size: 42px;
+        line-height: 21px;
+        color: $main_color;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: -42px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 19px;
+        
+        text-align: center;
+
+        color: #0D0D0D;
+        margin-bottom: 0;
+    }
+    &__text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        
+        text-align: center;
+
+        color: #0D0D0D;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    &_mini {
+        min-height: 143px;
+    }
+}
