@@ -12,6 +12,21 @@
             }
         }
     }
+
+    .catalog {
+        &__content {
+            justify-content: center;
+        }
+        &-item {
+            margin-right: 19px;
+            &:nth-child(3n) {
+                margin-right: 19px;
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -36,6 +51,42 @@
             .slick-slide img {
                 width: 400px;
             }
+        }
+    }
+
+    .catalog {
+        &__tab {
+            font-size: 16px;
+        }
+        &-item {
+            margin-right: 9px;
+            margin-left: 9px;
+            &:nth-child(3n) {
+                margin-right: 9px;
+            }
+            &:nth-child(2n) {
+                margin-right: 9px;
+            }
+        }
+    }
+
+    .reviews {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__image {
+            margin-right: 0;
+            margin-bottom: 31px;
+            img {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        &__name {
+            text-align: center;
+        }
+        &__half-marathon {
+            text-align: center;
         }
     }
 }
@@ -104,6 +155,31 @@
         &__slider {
             .slick-slide img {
                 width: 100%;
+            }
+        }
+    }
+
+    .catalog {
+        padding-bottom: 40px;
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__tab {
+            margin-top: 12px;
+            transform: skew(0);
+            div {
+                transform: skew(0);
+            }
+        }
+        &-item {
+            margin-right: 0;
+            margin-left: 0;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
             }
         }
     }

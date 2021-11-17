@@ -4,7 +4,7 @@
 
     background: $main_color;
     border-radius: 5px;
-    font-weight: 300;
+    font-weight: 500;
     font-size: 12px;
     line-height: 19px;
 
@@ -38,5 +38,11 @@
         font-size: 16px;
         line-height: 25px;
         text-align: center;
+    }
+    &_normal {
+        width: 131px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 22px;
     }
 }
