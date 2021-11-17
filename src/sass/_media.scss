@@ -183,4 +183,17 @@
             }
         }
     }
+
+    .footer {
+        &__wrapper {
+            position: static;
+            transform: translateX(0);
+            width: 100%;
+            padding: 25px;
+            height: auto;
+        }
+        &__address {
+            font-size: 16px;
+        }
+    }
 }
