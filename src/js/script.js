@@ -41,10 +41,41 @@ $(document).ready(function () {
         $(this).on('click', function () {
             $('#order .modal__text').text($('.catalog-item .catalog-item__title').eq(i).text());
             $('.overlay, #order').fadeIn();
-        })
+        });
     });
 
     $('.modal__close').on('click', function () {
         $('.overlay, #consultation, #order, #thanks').fadeOut();
     });
+
+    function formValidate(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: {
+                    required: true,
+                    minlength: 9
+                },
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите ваше имя",
+                phone: {
+                    required: "Пожалуйста, введите ваш номер телефона",
+                    minlength: "Пожалуйста, введите номер телефона в формате 123456789"
+                },
+                email: {
+                    required: "Пожалуйста, введите вашу электронную почту",
+                    email: "Пожалуйста, введите электронную почту в формате name@domain.com"
+                }
+            }
+        });
+    };
+
+    formValidate('#consultationSection');
+    formValidate('#consultation form');
+    formValidate('#order form');
 });
