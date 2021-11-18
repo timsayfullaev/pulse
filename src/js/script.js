@@ -52,10 +52,7 @@ $(document).ready(function () {
         $(form).validate({
             rules: {
                 name: "required",
-                phone: {
-                    required: true,
-                    minlength: 9
-                },
+                phone: "required",
                 email: {
                     required: true,
                     email: true
@@ -63,10 +60,7 @@ $(document).ready(function () {
             },
             messages: {
                 name: "Пожалуйста, введите ваше имя",
-                phone: {
-                    required: "Пожалуйста, введите ваш номер телефона",
-                    minlength: "Пожалуйста, введите номер телефона в формате 123456789"
-                },
+                phone: "Пожалуйста, введите ваш номер телефона",
                 email: {
                     required: "Пожалуйста, введите вашу электронную почту",
                     email: "Пожалуйста, введите электронную почту в формате name@domain.com"
@@ -78,4 +72,6 @@ $(document).ready(function () {
     formValidate('#consultationSection');
     formValidate('#consultation form');
     formValidate('#order form');
+
+    $('input[name=phone]').mask('99 999-99-99');
 });
