@@ -1,0 +1,12 @@
+.up {
+    color: $main_color;
+    font-size: 48px;
+    transition: all .25s;
+    position: fixed;
+    right: 48px;
+    bottom: 48px;
+    display: none;
+    &:hover {
+        color: $main_color_hover;
+    }
+}
