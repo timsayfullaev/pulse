@@ -12,6 +12,11 @@
         width: 273px;
         text-align: center;
     }
+    &__icon {
+        &_animated {
+            animation: heartBeat 1s ease infinite;
+        }
+    }
     &__title {
         font-weight: 700;
         font-size: 18px;
